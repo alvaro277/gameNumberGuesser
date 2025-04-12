@@ -34,13 +34,13 @@ guessButton.addEventListener('click', () => {
 
   // Muestra el ganador
   if (humanIsWinner) {
-    guessButton.innerText = 'You Win!!!!!';
+    guessButton.innerText = '¡¡¡¡¡Tú ganas!!!!!';
     guessButton.classList.toggle('winning-text')
   } else {
-    computerWinsDisplay.innerText = 'Computer Wins!!!';
+    computerWinsDisplay.innerText = '¡¡¡El PC gana!!!';
   }
 
-  // winnerDisplay.innerText = humanIsWinner ? 'You win!' : 'Computer wins!';
+  // winnerDisplay.innerText = humanIsWinner ? '¡Tú ganas!' : '¡El PC gana!';
 
   // Muestra los ganadores actuales:
   humanScoreDisplay.innerText = humanScore;
