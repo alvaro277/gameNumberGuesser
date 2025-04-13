@@ -13,8 +13,6 @@ function compareGuesses(humanGuess, computerGuess, secretNumber) {
     return true;
   }else if (humanDifference > computerDifference) {
     return false;
-  }else if (humanDifference === computerDifference){
-    return false;
   }
 }
 
