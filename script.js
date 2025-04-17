@@ -11,7 +11,7 @@ function compareGuesses(humanGuess, computerGuess, secretNumber) {
   let computerDifference = Math.abs(computerGuess-secretNumber);
   if (humanDifference <= computerDifference) {
     return true;
-  }else if (humanDifference > computerDifference) {
+  }else {
     return false;
   }
 }
@@ -21,3 +21,5 @@ const updateScore = winner => winner === 'human' ? humanScore++ : computerScore+
 function advanceRound() {
   currentRoundNumber++;
 }
+
+
