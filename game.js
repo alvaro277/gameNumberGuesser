@@ -87,6 +87,7 @@ const handleValueChange = value => {
   if (value > 0 && value <= 9) {
     subtractButton.removeAttribute('disabled');
     addButton.removeAttribute('disabled');
+    guessButton.removeAttribute('disabled')
     
   } else if (value > 9) {
     addButton.setAttribute('disabled', true);
@@ -96,7 +97,7 @@ const handleValueChange = value => {
     
   }else if (value < 0) {
     guessButton.setAttribute('disabled', true);
-}else if (value >= 0 && value <= 9){
+}else if (value === 0){
     guessButton.removeAttribute('disabled');
   }
 
