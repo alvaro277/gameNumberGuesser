@@ -87,15 +87,18 @@ const handleValueChange = value => {
   if (value > 0 && value <= 9) {
     subtractButton.removeAttribute('disabled');
     addButton.removeAttribute('disabled');
-    guessButton.removeAttribute('disabled');
+    
   } else if (value > 9) {
     addButton.setAttribute('disabled', true);
     guessButton.setAttribute('disabled', true);
   } else if (value <= 0) {
     subtractButton.setAttribute('disabled', true);
+    
+  }else if (value < 0) {
     guessButton.setAttribute('disabled', true);
+}else if (value >= 0 && value <= 9){
+    guessButton.removeAttribute('disabled');
   }
-}
 
 humanGuessInput.addEventListener('input', function(e) {
   handleValueChange(e.target.value);
