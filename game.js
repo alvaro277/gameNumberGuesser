@@ -100,7 +100,7 @@ const handleValueChange = value => {
 }else if (value === 0){
     guessButton.removeAttribute('disabled');
   }
-
+}
 humanGuessInput.addEventListener('input', function(e) {
   handleValueChange(e.target.value);
 });
