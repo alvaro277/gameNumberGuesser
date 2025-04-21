@@ -99,7 +99,7 @@ const handleValueChange = value => {
     guessButton.setAttribute('disabled', true);
 }else if (value === 0){
     guessButton.removeAttribute('disabled');
-  }else if ( guessButton.innerText != 'Adivínalo'){
+  }else if ( guessButton.innerText != 'Adivínalo' || computerWinsDisplay.innerText){
     guessButton.setAttribute('disabled', true);
   }
 } 
