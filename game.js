@@ -99,8 +99,10 @@ const handleValueChange = value => {
     guessButton.setAttribute('disabled', true);
 }else if (value === 0){
     guessButton.removeAttribute('disabled');
+  }else if ( guessButton.innerText != 'Adivínalo'){
+    guessButton.setAttribute('disabled', true);
   }
-}
+} 
 humanGuessInput.addEventListener('input', function(e) {
   handleValueChange(e.target.value);
 });
